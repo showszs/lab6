@@ -1,0 +1,167 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /uk
+          - img "Логотип Node.js" [ref=e7]
+        - button "Перемкнути меню навігації" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - checkbox "Перемкнути меню навігації" [ref=e21]
+    - generic [ref=e22]:
+      - img [ref=e24]
+      - main [ref=e301]:
+        - generic [ref=e302]:
+          - link "Discover New migration guides" [ref=e303] [cursor=pointer]:
+            - /url: https://nodejs.org/en/blog/migrations
+            - generic [ref=e304]: Discover
+            - generic [ref=e305]: New migration guides
+            - img [ref=e306]
+          - generic [ref=e308]:
+            - heading "Запускайте JavaScript будь‑де" [level=1] [ref=e309]
+            - paragraph [ref=e310]: Node.js® — це безплатне, кросплатформне середовище виконання JavaScript із відкритим кодом, яке дозволяє розробникам створювати сервери, вебзастосунки, інструменти командного рядка та скрипти.
+          - generic [ref=e312]:
+            - button "Отримати Node.js®" [ref=e313] [cursor=pointer]
+            - button "Отримати підтримку безпеки для версій Node.js, які досягли кінця підтримки (EOL)" [ref=e314] [cursor=pointer]:
+              - text: Отримати підтримку безпеки
+              - text: для версій Node.js, які досягли кінця підтримки (EOL)
+            - generic [ref=e316]:
+              - button [ref=e317] [cursor=pointer]:
+                - button [ref=e318]:
+                  - img [ref=e319]
+              - button [ref=e322] [cursor=pointer]:
+                - button [ref=e323]:
+                  - img [ref=e324]
+              - button [ref=e330] [cursor=pointer]:
+                - button [ref=e331]:
+                  - img [ref=e332]
+              - button [ref=e343] [cursor=pointer]:
+                - button [ref=e344]:
+                  - img [ref=e345]
+              - button [ref=e347] [cursor=pointer]:
+                - button [ref=e348]:
+                  - img [ref=e349]
+              - button [ref=e352] [cursor=pointer]:
+                - button [ref=e353]:
+                  - img [ref=e354]
+            - generic [ref=e361]:
+              - text: Node.js підтримується партнерами вище
+              - link "і не тільки" [ref=e362] [cursor=pointer]:
+                - /url: /uk/about/partners
+              - text: .
+        - generic [ref=e363]:
+          - generic [ref=e365]:
+            - tablist [ref=e366]:
+              - tab "Create an HTTP Server" [selected] [ref=e367] [cursor=pointer]
+              - tab "Write Tests" [ref=e368] [cursor=pointer]
+              - tab "Read and Hash a File" [ref=e369] [cursor=pointer]
+              - tab "Streams Pipeline" [ref=e370] [cursor=pointer]
+              - tab "Work with Threads" [ref=e371] [cursor=pointer]
+            - tabpanel "Create an HTTP Server" [ref=e372]:
+              - generic [ref=e373]:
+                - code [ref=e375]:
+                  - generic [ref=e376]: // server.mjs
+                  - generic [ref=e377]:
+                    - text: "import {"
+                    - button "createServer" [ref=e379]
+                    - text: "} from 'node:http';"
+                  - generic [ref=e381]:
+                    - text: const
+                    - button "server" [ref=e383]
+                    - text: =
+                    - button "createServer" [ref=e385]
+                    - text: ((
+                    - button "req" [ref=e387]
+                    - text: ","
+                    - button "res" [ref=e389]
+                    - text: ") => {"
+                  - generic [ref=e390]:
+                    - button "res" [ref=e392]
+                    - text: .
+                    - button "writeHead" [ref=e394]
+                    - text: "(200, { 'Content-Type': 'text/plain' });"
+                  - generic [ref=e395]:
+                    - button "res" [ref=e397]
+                    - text: .
+                    - button "end" [ref=e399]
+                    - text: ('Hello World!\n');
+                  - generic [ref=e400]: "});"
+                  - generic [ref=e402]: // starts a simple http server locally on port 3000
+                  - generic [ref=e403]:
+                    - button "server" [ref=e405]
+                    - text: .
+                    - button "listen" [ref=e407]
+                    - text: "(3000, '127.0.0.1', () => {"
+                  - generic [ref=e408]:
+                    - button "console" [ref=e410]
+                    - text: .
+                    - button "log" [ref=e412]
+                    - text: ('Listening on 127.0.0.1:3000');
+                  - generic [ref=e413]: "});"
+                  - generic [ref=e415]: "// run with `node server.mjs`"
+                - generic [ref=e416]:
+                  - generic [ref=e417]: JavaScript
+                  - button "Скопіювати в буфер обміну" [ref=e418] [cursor=pointer]:
+                    - img [ref=e419]
+                    - text: Скопіювати в буфер обміну
+          - paragraph [ref=e421]:
+            - text: Дізнайтеся більше про можливості Node.js із
+            - link "нашими навчальними матеріалами" [ref=e422] [cursor=pointer]:
+              - /url: /uk/learn
+            - text: .
+    - contentinfo [ref=e423]:
+      - generic [ref=e424]:
+        - generic [ref=e425]:
+          - link "v24.11.0 Остання LTS" [ref=e426] [cursor=pointer]:
+            - /url: /blog/release/v24.11.0
+            - generic [ref=e427]: v24.11.0
+            - generic [ref=e428]: Остання LTS
+          - link "v25.1.0 Останній реліз" [ref=e429] [cursor=pointer]:
+            - /url: /blog/release/v25.1.0
+            - generic [ref=e430]: v25.1.0
+            - generic [ref=e431]: Останній реліз
+        - link "Політика торгових марок" [ref=e432] [cursor=pointer]:
+          - /url: https://trademark-policy.openjsf.org/
+          - generic [ref=e433]: Політика торгових марок
+        - link "Політика конфіденційності" [ref=e434] [cursor=pointer]:
+          - /url: https://privacy-policy.openjsf.org/
+          - generic [ref=e435]: Політика конфіденційності
+        - link "Кодекс поведінки" [ref=e436] [cursor=pointer]:
+          - /url: https://github.com/openjs-foundation/cross-project-council/blob/main/CODE_OF_CONDUCT.md
+          - generic [ref=e437]: Кодекс поведінки
+        - link "Політика безпеки" [ref=e438] [cursor=pointer]:
+          - /url: https://github.com/nodejs/node/security/policy
+          - generic [ref=e439]: Політика безпеки
+      - generic [ref=e440]:
+        - link "© OpenJS Foundation" [ref=e441] [cursor=pointer]:
+          - /url: https://openjsf.org/
+          - generic [ref=e442]: © OpenJS Foundation
+        - generic [ref=e443]:
+          - link "https://github.com/nodejs/node" [ref=e444] [cursor=pointer]:
+            - /url: https://github.com/nodejs/node
+            - img "https://github.com/nodejs/node" [ref=e446]
+          - link "https://discord.gg/nodejs" [ref=e448] [cursor=pointer]:
+            - /url: https://discord.gg/nodejs
+            - img "https://discord.gg/nodejs" [ref=e450]
+          - link "https://social.lfx.dev/@nodejs" [ref=e452] [cursor=pointer]:
+            - /url: https://social.lfx.dev/@nodejs
+            - img "https://social.lfx.dev/@nodejs" [ref=e454]
+          - link "https://bsky.app/profile/nodejs.org" [ref=e457] [cursor=pointer]:
+            - /url: https://bsky.app/profile/nodejs.org
+            - img "https://bsky.app/profile/nodejs.org" [ref=e459]
+          - link "https://twitter.com/nodejs" [ref=e461] [cursor=pointer]:
+            - /url: https://twitter.com/nodejs
+            - img "https://twitter.com/nodejs" [ref=e463]
+          - link "https://slack-invite.openjsf.org/" [ref=e465] [cursor=pointer]:
+            - /url: https://slack-invite.openjsf.org/
+            - img "https://slack-invite.openjsf.org/" [ref=e467]
+          - link "https://www.linkedin.com/company/node-js" [ref=e472] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/node-js
+            - img "https://www.linkedin.com/company/node-js" [ref=e474]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=e476]
+```
