@@ -3,10 +3,10 @@ name: Lab CI
 on:
   push:
     branches:
-      - main
+      - testing-ci-process
   pull_request:
     branches:
-      - main
+      - testing-ci-process
 
 jobs:
   build:
@@ -22,7 +22,10 @@ jobs:
         node-version: '20.x'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
+
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
 
     - name: Run tests
-      run: npm test
+      run: npx playwright test
